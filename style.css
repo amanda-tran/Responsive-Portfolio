@@ -135,57 +135,129 @@ footer {
   text-align: center;
   background-color: #bfbfbf;
 }
-@media only screen and (max-width: 980px) {
-  body {
-      background-color: white;
-  }
-}
-@media only screen and (max-width: 768px) {
-  body {
-      background-color: teal;
-  }
-}
-@media only screen and (max-width: 640px) {
-  body {
-      background-color: lightblue;
-  }
-}
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+@media (max-width: 980px) 
+{
+    body {
+        width: auto; 
+    }
+    .main-body {
+        margin: 0 32% 0 15%;
+    }
+    img {
+        width: 180px; 
+        height: 140px; 
+    }
+    a, header, .Aboutme {
+        font-size: inherit; 
+    }
+    .img-p {
+        min-height: inherit;
+    }
+    .links {
+        background-color: white; 
+        position: static;
+        display: inline;
+        padding-left: 30%;
+        width: 75%; 
+        text-align: center;
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+    }
+    .container2 {
+        width: 90%;
+        margin: 5px; 
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item {
+        padding: 2px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 760px) 
+{
+    body {
+        width: auto;
+    }
+    .main-body {
+        margin: 0 3%;
+    }
+    img {
+        width: 40%; 
+        height: 33%;
+        padding: 0;
+    }
+    .img-p {
+        height: 33%;
+
+    }
+        .links {
+            background-color: white; 
+            position: static;
+            display: inline;
+            padding-left: 30%;
+            width: 75%; 
+            text-align: center;
+    
+    }
+
+    .container2 {
+        width: 90%;
+        margin: 5px; 
     }
 }
-@media screen and (max-width: 600px) {
-  .topnav a {
-      float: none;
-      width: 100%;
-  }
-}
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-  .column {
-      width: 50%;
-  }
-}
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-      width: 100%;
-  }
+@media (max-width: 640px) 
+{
+    header {
+        margin: 0;
+    }
+    .header-name {
+        width: 100%;
+        display: inherit;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    a {
+
+    }
+    body {
+        width: auto;
+    }
+    .main-body {
+        margin: 0 3%;
+    }
+    img {
+        width: 94%; 
+        height: 33%;
+        padding: 3%;
+    }
+    .img-p {
+        /* height: 33%; */
+        padding: 2%;
+        
+    }
+
+    .links {
+        background-color: white; 
+        position: static;
+        display: inline;
+        padding-left: 30%;
+        width: 75%; 
+        text-align: center;
+    }
+
+    .container2 {
+        width: 90%;
+        margin: 5px; 
+    }
 }
